@@ -2,12 +2,223 @@
 @import "libs"
 @import "vars"
 
-h1
-	font-size: 26px
-	font-family: "MyriadProRegular", sans-serif
+*
+	padding: 0
+	margin: 0
 
-.main
-	margin: 0 auto
-	width: 90%
+body
+	font-size: 22px
+	font-family: "AAvanteLtNrThin", sans-serif
+	line-height: 1.4
+	overflow-x: hidden
+
+strong, b
+	font-family: "AAvanteLtNrSemiBold", sans-serif
+
+h1
+	font-size: 140px
+	font-family: "AAvanteLtNrSemiBold", sans-serif
+	text-transform: uppercase
+	color: #0e0f11
+
+
+h4, .h4
+	font-family: "AAvanteLtNrThin", sans-serif
+	text-transform: uppercase
+	color: #fff
+	background-color: rgba(0, 0, 0, .8)
+	display: inline-block
+	padding: 10px 50px
+
+.btn
+	display: block
+	font-size: 16px
+	font-family: "AAvanteLtNrThin", sans-serif
+	color: #fff
+	background-color: #000
+	text-align: center
+	padding: 3px
+	transition: all .5s ease
+	&:hover
+		color: #fff
+		text-decoration: none
+		background-color: rgba(0, 0, 0, .8)
+header
+	min-height: 850px
+	background-image: url(../img/bg-header.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top left
+.top-line
+	position: relative
+	background-color: rgba(0, 0, 0, .8)
+	color: #fff
+	font-family: "MyriadProRegular", sans-serif
+	padding: 8px 0
+	z-index: 1
+	strong
+		font-size: 74px
+		line-height: 74px
+		display: inline-block
+		font-family: "MyriadProRegular", sans-serif
+	.logo-text
+		display: inline-block
+		a
+			font-size: 38px
+			line-height: 25px
+			color: #fff
+			display: block
+			&:hover
+				text-decoration: none
+		span
+			display: block
+			font-size: 18px
+			line-height: 19px
+			font-family: "AAvanteLtNrThinItalic", sans-serif
+.top-phone,.top-email
+	font-family: 'Miriam', sans-serif
+	line-height: 74px
+	text-align: right
+	font-size: 33px
+	font-weight: 600
+	img
+		width: 36px
+		margin-right: 5px
+.header-content
+	text-align: right
+	.social
+		float: left
+		margin-top: 24px
+		margin-left: 25px
+		.social__vk, .social__f, .social__i
+			float: left
+			margin-right: 10px
+			img
+				width: 36px
+	h1
+		line-height: 0
+		position: relative
+		font-weight: normal
+		margin-top: 50px
+		margin-bottom: 0
+		&::after
+			content: ''
+			position: absolute
+			right: 350px
+			bottom: 45px
+			width: 45px
+			height: 45px
+			background-color: rgba(14, 15, 17, .8)
+			
+		p
+			background-color: rgba(255,255,255, .7)
+			line-height: 130px
+			padding: 5px 0px 0px 20px
+			display: inline-block
+			position: relative
+			z-index: 1
+
+	span
+		font-family: "AAvanteLtNrThin", sans-serif
+		font-size: 53px
+		color: #fff
+		display: inline-block
+		line-height: 40px
+		position: relative 
+		z-index: 2
+		padding: 15px 38px
+		&::before
+			content: ''
+			position: absolute
+			left: 0	
+			top: 0
+			bottom: 0
+			background-color: rgba(250, 190, 13, 0.7)
+			right: -3000px
+			z-index: -1
+.top-form
+	width: 370px
+	text-align: center
+	display: inline-block
+	background-color: rgba(0, 0, 0, .5)
+	padding: 12px 20px
+	margin-top: 12px
+	margin-right: 30px
+	p
+		font-size: 24px
+		font-family: "AAvanteLtNrThin", sans-serif
+		color: #fff
+		padding-bottom: 8px
+	input, textarea
+		font-family: "Arial", sans-serif
+		font-size: 16px
+		display: block
+		width: 100%
+		border: 0
+		margin-bottom: 10px
+		padding: 8px
+		color: #9c9797
+		&::placeholder
+			font-size: 16px
+			font-family: "Arial", sans-serif
+			color: #9c9797
+	textarea
+		height: 60px
+//SECTION 1//
+.sect-1
+	min-height: 600px
+	position: relative
+
+	.trac
+		width: 100%
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 68px
+			height: 68px
+			top: -36px
+			left: -15px
+			background-color: rgba(0, 0, 0, .7)
+		img
+			float: left
+			width: 360px
+			padding-bottom: 40px
+			
+
+			
+	.trac-content
+		margin-top: 78px
+		h2
+			font-family: "AAvanteLtNrSemiBold", sans-serif
+			font-size: 32px
+			font-weight: normal
+			color: #0e0f11
+			text-transform: uppercase
+		.yel
+			font-family: "AAvanteLtNrThin", sans-serif
+			text-transform: uppercase
+			color: #fff
+			font-size: 25px
+			background-color: $accent
+			margin-left: 266px
+			line-height: 30px
+			position: relative
+			z-index: 2
+			padding: 12px 0
+			span
+				position: absolute
+				font-size: 120px
+				color: #000
+				top: -10px
+				right: 250px
+				font-weight: bold
+		p
+			color: #000
+			padding-right: 30px
+
+
+
+
 
 @import "media" // Всегда в конце
