@@ -166,7 +166,7 @@ header
 		height: 60px
 //SECTION 1//
 .sect-1
-	min-height: 600px
+	min-height: 400px
 	position: relative
 
 	.trac
@@ -217,8 +217,90 @@ header
 			color: #000
 			padding-right: 30px
 
-
-
-
+//SECTION-2// 
+.sect-2
+	min-height: 360px
+	background-color: #f6f5f5
+	position: relative
+	&__content
+		strong
+			font-family: "AAvanteLtNrSemiBold", sans-serif
+			font-size: 140px
+			text-transform: uppercase
+			color: #000
+			font-weight: normal
+		.number
+			position: absolute
+			font-family: "AAvanteLtNrThin", sans-serif
+			font-weight: bold
+			text-transform: uppercase
+			display: flex
+			align-items: center
+			span
+				color: $accent
+				font-size: 120px
+			p
+				font-size: 25px
+	&__header
+		text-transform: uppercase
+		font-family: "AAvanteLtNrSemiBold", sans-serif
+		font-size: 32px
+		position: relative
+		margin-top: -29px
+		span
+			position: relative
+			z-index: 2
+			padding-top: 50px
+			&::before
+				content: ''
+				position: absolute
+				right: 0	
+				top: 0
+				bottom: 8px
+				background-color: rgba(250, 190, 13, 1)
+				left: -3000px
+				z-index: -1
+			&::after
+				content: ''
+				position: absolute
+				height: 68px
+				width: 202px
+				border: 3px solid $accent
+				top: 32px
+				right: -144px
+				z-index: -2
+.square
+		position: absolute
+		top: 5px
+		left: -78px
+		width: 48px
+		height: 48px
+		background-color: rgba(0, 0, 0, .7)
+		z-index: 100
+.sect2__you
+	float: left
+	margin-top: 122px
+	img
+		margin-bottom: 160px
+.sect2__we
+	float: right
+	margin-top: 96px
+.sect2__numbers
+	position: relative
+	.sect2_n1
+		left: 308px
+		top: 37px
+	.sect2_n2	
+		right: 328px
+		top: 100px
+		p
+			&:last-child
+				display: none
+	.sect2_n3	
+		left: 310px
+		top: 175px
+	.sect2_n4
+		right: 289px
+		top: 238px
 
 @import "media" // Всегда в конце

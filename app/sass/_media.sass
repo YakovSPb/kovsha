@@ -12,6 +12,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.sect2_n2, .sect2_n4
+		span
+			line-height: 100px
+	.sect-2__header
+		margin-top: 70px
 	.sect-1 .trac-content .yel span
 		position: static
 		font-size: 35px
@@ -26,6 +31,21 @@
 		.top-phone,.top-email
 			text-align: center
 			line-height: 50px
+	.sect2__you, .sect2__we
+		display: none
+	.sect-2
+		.number
+			width: 250px
+			margin: 0 auto
+	.sect-2__content .number
+		position: static
+	.sect2_n2	
+		p
+			&:last-child
+				display: block!important
+			&:first-child
+				display: none
+
 
 
 /* Small Devices, Tablets */
