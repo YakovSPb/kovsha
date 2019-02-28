@@ -31,11 +31,22 @@
 	.t-center
 		width: 100%
 		margin-bottom: 60px
-
-
+	.yellow-location
+		right: 0px
+		bottom: 159px
+		font-size: 16px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.yellow-location
+		position: static
+		text-align: left
+		.block2 img
+			float: none
+		&:after
+			display: none
+	footer
+		text-align: center
 	.sect2_n2, .sect2_n4
 		span
 			line-height: 100px
@@ -63,6 +74,8 @@
 			margin: 0 auto
 	.sect-2__content .number
 		position: static
+		span
+			margin-right: 10px
 	.sect2_n2	
 		p
 			&:last-child

@@ -11,6 +11,7 @@ body
 	font-family: "AAvanteLtNrThin", sans-serif
 	line-height: 1.4
 	overflow-x: hidden
+	position: relative
 
 strong, b
 	font-family: "AAvanteLtNrSemiBold", sans-serif
@@ -484,6 +485,7 @@ header
 
 //SECTION 8//
 .sect-8
+	min-height: 500px
 	.square
 		left: 43px
 	.sect-3__content
@@ -491,11 +493,121 @@ header
 			margin-bottom: 85px
 		&::after
 			background-color: rgba(255, 255, 255, .7)
-			bottom: -35px
-			right: 60px
+			bottom: -25px
+			right: 20px
 			width: 58px
 			height: 58px
 		
+//FOOTER//
+footer
+	position: relative
+	background-color: #f6f5f5
+	.sect-2__header span
+		&::after
+			width: 220px
+			right: -191px
+	.footer-map
+		margin-bottom: 90px
+		position: relative
+		margin-top: 10px
+		img
+			max-width: 100%
+		&:after
+			content: ''
+			position: absolute
+			background-color: rgba(0, 0, 0, .7)
+			right: 96px
+			bottom: -35px
+			width: 48px
+			height: 48px
+			z-index: 0
+.footer-line
+	background-color: #0e0f11
+	color: #fff
+	padding: 20px 0
+	font-size: 13px
+	line-height: 24px
+	.footer-logo
+		text-align: left
+		display: inline-block
+		strong
+			font-size: 74px
+			line-height: 74px
+			display: inline-block
+			font-family: "MyriadProRegular", sans-serif
+		.logo-text
+			display: inline-block
+			a
+				font-size: 38px
+				line-height: 25px
+				color: #fff
+				display: block
+				font-weight: bold
+				&:hover
+					text-decoration: none
+			span
+				display: block
+				font-size: 18px
+				line-height: 19px
+				font-family: "AAvanteLtNrThinItalic", sans-serif
+.copy
+	margin-top: 15px
+.location
+	margin-top: 25px
+.phone
+	margin-top: 20px
+	a
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.yellow-location
+	font-size: 20px
+	position: absolute
+	font-weight: bold
+	color: #0e0f11
+	right: 139px
+	bottom: 175px
+	background-color: rgba($accent,.5)
+	padding: 20px 26px 
+	&::after
+		content: ''
+		position: absolute
+		border: 40px solid transparent 
+		border-top: 20px solid rgba($accent,.5)
+		border-right: 0px solid rgba($accent,.5)
+		left: -40px
+		top: 55px
+	img
+		margin-right: 12px
+	.block2
+		margin-top: 6px
+		img
+			float: left
+			padding-bottom: 20px
+
+//FORMA//
+.success
+	position: absolute
+	display: flex
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	background-color: #fff
+	z-index: 2
+	padding: 30px
+	text-transform: uppercase
+	display: none
+	align-items: center
+	font-family: "Graffiti1C", sans-serif
+	font-size: 30px
+	&.visible
+		display: flex
+
+
+
 
 
 @import "media" // Всегда в конце
